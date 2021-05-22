@@ -8,10 +8,10 @@
 import Foundation
 
 struct ClassData: Identifiable {
-    var id = UUID()
-    var name: String = "授業名"
-    var description: String = "講義内容"
-    var room: String = "講義室名"
-    var start: Date = Date()
-    var end: Date = Date()
+    let id = UUID()
+    let name: String // 授業名
+    let description: String // 講義内容
+    let room: String // 講義室名
+    let start: Date // 開始時間
+    let end: Date // 終了時間
 }

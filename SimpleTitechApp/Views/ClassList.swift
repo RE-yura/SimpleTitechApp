@@ -10,7 +10,7 @@ import SwiftUI
 struct ClassList: View {
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
-            coloredNavAppearance.configureWithOpaqueBackground()
+        coloredNavAppearance.configureWithOpaqueBackground()
         coloredNavAppearance.backgroundColor = UIColor.white
         coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
         coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
@@ -57,13 +57,12 @@ struct ClassList: View {
                     }
                     .padding(.vertical, 1.0)
                     .listRowInsets(EdgeInsets())
-                                    }
+                }
             }
             .navigationBarTitle("スケジュール", displayMode: .inline)
             .listRowInsets(EdgeInsets())
         }
         .accentColor(Color("MainColor"))
-        
     }
 }
 

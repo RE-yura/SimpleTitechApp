@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClassRow: View {
-    let cls: ClassData;
+    let cls: ClassData
     
     var body: some View {
         HStack {
@@ -44,6 +44,12 @@ struct ClassRow: View {
 
 struct ClassRow_Previews: PreviewProvider {
     static var previews: some View {
-        ClassRow(cls: ClassData())
+        ClassRow(cls: ClassData(
+            name: "力学1",
+            description: "Week 1 Description",
+            room: "W222",
+            start: Date(),
+            end: Date()
+        ))
     }
 }

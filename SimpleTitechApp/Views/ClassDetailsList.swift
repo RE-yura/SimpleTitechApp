@@ -9,32 +9,19 @@ import SwiftUI
 
 struct Detail: Identifiable {
     let id = UUID()
-    let title: String;
-    let contents: String;
+    let title: String
+    let contents: String
 }
 
 struct ClassDetailsList: View {
-    let cls: ClassData;
+    let cls: ClassData
     
     let details = [
         Detail(title: "アナウンスメント", contents: "フォーラム"),
         Detail(title: "講義スライド", contents: "ファイル"),
         Detail(title: "zoom録画", contents: "URL"),
     ]
-    
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
-    var btnBack : some View { Button(action: {
-        self.presentationMode.wrappedValue.dismiss()
-        }) {
-            Image("ic_back")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 30)
-                .foregroundColor(Color("MainColor"))
-        }
-    }
-    
+        
     var body: some View {
         List {
             ForEach(details) { detail in
@@ -44,13 +31,17 @@ struct ClassDetailsList: View {
             }
         }
         .navigationBarTitle(self.cls.name, displayMode: .inline)
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: btnBack)
     }
 }
 
 struct ClassDetailsList_Previews: PreviewProvider {
     static var previews: some View {
-        ClassDetailsList(cls: ClassData())
+        ClassDetailsList(cls: ClassData(
+            name: "力学1",
+            description: "Week 1 Description",
+            room: "W222",
+            start: Date(),
+            end: Date()
+        ))
     }
 }

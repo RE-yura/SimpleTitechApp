@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct ClassData: Hashable {
+struct ClassData: Identifiable {
+    var id = UUID()
     var name: String = "授業名"
     var description: String = "講義内容"
     var room: String = "講義室名"

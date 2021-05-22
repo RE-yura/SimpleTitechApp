@@ -15,7 +15,6 @@
 		DED569142658A016003E718B /* ClassDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569132658A016003E718B /* ClassDetailsList.swift */; };
 		DED569162658A022003E718B /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569152658A022003E718B /* ClassRow.swift */; };
 		DED569182658A033003E718B /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569172658A033003E718B /* ClassList.swift */; };
-		DED5691C2658AC51003E718B /* BorderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5691B2658AC51003E718B /* BorderExtension.swift */; };
 		DED569212658C9AB003E718B /* ClassData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569202658C9AB003E718B /* ClassData.swift */; };
 		DED569242658DDCD003E718B /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569232658DDCD003E718B /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		DED569132658A016003E718B /* ClassDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsList.swift; sourceTree = "<group>"; };
 		DED569152658A022003E718B /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
 		DED569172658A033003E718B /* ClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
-		DED5691B2658AC51003E718B /* BorderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderExtension.swift; sourceTree = "<group>"; };
 		DED569202658C9AB003E718B /* ClassData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassData.swift; sourceTree = "<group>"; };
 		DED569232658DDCD003E718B /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 		DED569222658DDAB003E718B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				DED5691B2658AC51003E718B /* BorderExtension.swift */,
 				DED569232658DDCD003E718B /* DateFormatter.swift */,
 			);
 			path = Lib;
@@ -187,7 +184,6 @@
 				DED5690526589A47003E718B /* ContentView.swift in Sources */,
 				DED569142658A016003E718B /* ClassDetailsList.swift in Sources */,
 				DED569182658A033003E718B /* ClassList.swift in Sources */,
-				DED5691C2658AC51003E718B /* BorderExtension.swift in Sources */,
 				DED569212658C9AB003E718B /* ClassData.swift in Sources */,
 				DED5690326589A47003E718B /* SimpleTitechAppApp.swift in Sources */,
 				DED569162658A022003E718B /* ClassRow.swift in Sources */,

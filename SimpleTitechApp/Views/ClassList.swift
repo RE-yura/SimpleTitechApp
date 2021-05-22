@@ -45,14 +45,19 @@ struct ClassList: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(classes, id: \.hashValue) { cls in
-                    NavigationLink(
-                        destination: ClassDetailsList(cls: cls)) {
+                ForEach(classes) { cls in
+                    HStack {
                         ClassRow(cls: cls)
+                        NavigationLink(destination: ClassDetailsList(cls: cls)) {
+                            EmptyView()
+                        }
+                        .frame(width: 0)
+                        .opacity(0)
+
                     }
                     .padding(.vertical, 1.0)
                     .listRowInsets(EdgeInsets())
-                }
+                                    }
             }
             .navigationBarTitle("スケジュール", displayMode: .inline)
             .listRowInsets(EdgeInsets())

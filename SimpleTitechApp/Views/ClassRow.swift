@@ -12,6 +12,9 @@ struct ClassRow: View {
     
     var body: some View {
         HStack {
+            Rectangle()
+                    .foregroundColor(Color("MainColor"))
+                .frame(width: 5, height: 120)
             VStack(alignment: .leading) {
                 Text(Date2String(date: self.cls.start))
                     .padding(.bottom)
@@ -27,7 +30,6 @@ struct ClassRow: View {
                 Text(self.cls.description)
                     .foregroundColor(.secondary)
             }
-            .padding(.leading, 7.0)
             .font(.subheadline)
             
             Spacer()
@@ -37,8 +39,6 @@ struct ClassRow: View {
                 .font(.subheadline)
                 .foregroundColor(Color("MainColor"))
         }
-        .padding(.vertical, 26.0)
-        .border(width: 8, edges: [.leading], color: Color("MainColor"))
     }
 }
 

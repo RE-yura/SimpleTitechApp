@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct Detail: Hashable {
+struct Detail: Identifiable {
+    let id = UUID()
     let title: String;
     let contents: String;
 }
@@ -36,7 +37,7 @@ struct ClassDetailsList: View {
     
     var body: some View {
         List {
-            ForEach(details, id: \.hashValue) { detail in
+            ForEach(details) { detail in
                 ClassDetailsRow(title: detail.title, contents: detail.contents)
                     .padding(.vertical, 0.5)
                     .listRowInsets(EdgeInsets())

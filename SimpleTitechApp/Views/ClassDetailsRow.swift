@@ -13,6 +13,9 @@ struct ClassDetailsRow: View {
     
     var body: some View {
         HStack {
+            Rectangle()
+                    .foregroundColor(Color("MainColor"))
+                .frame(width: 5, height: 70)
             VStack(alignment: .leading) {
                 Text(self.title)
                     .padding(.bottom, 1.0)
@@ -21,10 +24,9 @@ struct ClassDetailsRow: View {
             }
             .padding(.leading)
             .font(.subheadline)
+            
             Spacer()
-        }
-        .padding(.vertical, 9.0)
-        .border(width: 5, edges: [.leading], color: Color("MainColor"))
+        }        
     }
 }
 

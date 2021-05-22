@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct SimpleTitechAppApp: App {
+struct SimpleTitechApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ClassList()
         }
     }
 }

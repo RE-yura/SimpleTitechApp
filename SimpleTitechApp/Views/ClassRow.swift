@@ -13,7 +13,7 @@ struct ClassRow: View {
     var body: some View {
         HStack {
             Rectangle()
-                    .foregroundColor(Color("MainColor"))
+                .foregroundColor(Color("MainColor"))
                 .frame(width: 5, height: 120)
             VStack(alignment: .leading) {
                 Text(Date2String(date: self.cls.start))

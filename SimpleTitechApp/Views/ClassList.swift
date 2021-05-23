@@ -11,16 +11,13 @@ struct ClassList: View {
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
         coloredNavAppearance.configureWithOpaqueBackground()
-        coloredNavAppearance.backgroundColor = UIColor.white
-        coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
         UINavigationBar.appearance().standardAppearance = coloredNavAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
     }
     
     let classes = [
         ClassData(
-            name: "力学1",
+            name: "力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1力学1",
             description: "Week 1 Description",
             room: "W222",
             start: Date(),
@@ -55,7 +52,7 @@ struct ClassList: View {
                         .opacity(0)
 
                     }
-                    .padding(.vertical, 1.0)
+                    .padding(.vertical, 2.0)
                     .listRowInsets(EdgeInsets())
                 }
             }
@@ -69,5 +66,6 @@ struct ClassList: View {
 struct ClassList_Previews: PreviewProvider {
     static var previews: some View {
         ClassList()
+            .preferredColorScheme(.light)
     }
 }

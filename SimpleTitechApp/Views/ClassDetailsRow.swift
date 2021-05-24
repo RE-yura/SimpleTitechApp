@@ -13,22 +13,24 @@ struct ClassDetailsRow: View {
     
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
-                Text(self.title)
-                    .padding(.bottom, 1.0)
-                Text(self.contents)
-                    .foregroundColor(.secondary)
+            Rectangle()
+                .foregroundColor(Color("MainColor"))
+                .frame(maxWidth: 5, maxHeight: .infinity)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(self.title)
+                        .padding(.bottom, 1.0)
+                    Text(self.contents)
+                        .foregroundColor(.secondary)
+                }
+                .padding(.leading, 6.0)
+                .font(.subheadline)
+                
+                Spacer()
             }
-            .padding(.leading)
-            .font(.subheadline)
-            
-            Spacer()
+            .padding(.vertical, 12.0)
         }
-        .padding(.vertical, 10.0)
-        .frame(maxHeight: 100)
-        .overlay(Rectangle()
-            .fill(Color("MainColor"))
-            .frame(width: 5), alignment: .leading)
+        .frame(maxHeight: 200)
     }
 }
 

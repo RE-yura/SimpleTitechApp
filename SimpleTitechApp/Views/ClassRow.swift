@@ -12,43 +12,45 @@ struct ClassRow: View {
         
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
-                Text(Date2String(date: self.cls.start))
-                    .padding(.bottom)
-                Text(Date2String(date: self.cls.end))
-                    .foregroundColor(.secondary)
-            }
-            .padding(.leading, 23.0)
-            .font(.subheadline)
-            
-            VStack(alignment: .leading) {
-                Text(self.cls.name)
-                    .padding(.bottom)
-                Text(self.cls.description)
-                    .foregroundColor(.secondary)
-            }
-            .padding(.leading)
-            .font(.subheadline)
-            
-            Spacer()
-            
-            Text(self.cls.room)
-                .padding(.trailing)
-                .font(.subheadline)
+            Rectangle()
                 .foregroundColor(Color("MainColor"))
+                .frame(maxWidth: 5, maxHeight: .infinity)
+            HStack() {
+                VStack(alignment: .leading) {
+                    Text(Date2String(date: self.cls.start))
+                        .padding(.bottom, 10.0)
+                    Text(Date2String(date: self.cls.end))
+                        .foregroundColor(.secondary)
+                }
+                .padding(.leading, 8.0)
+                .font(.subheadline)
+                
+                VStack(alignment: .leading) {
+                    Text(self.cls.name)
+                        .padding(.bottom, 10.0)
+                    Text(self.cls.description)
+                        .foregroundColor(.secondary)
+                }
+                .padding(.leading, 8.0)
+                .font(.subheadline)
+                
+                Spacer()
+                
+                Text(self.cls.room)
+                    .padding(.trailing)
+                    .font(.subheadline)
+                    .foregroundColor(Color("MainColor"))
+            }
+            .padding(.vertical, 12.0)
         }
-        .padding(.vertical, 20.0)
-        .frame(maxHeight: 130)
-        .overlay(Rectangle()
-            .fill(Color("MainColor"))
-            .frame(width: 5), alignment: .leading)
+        .frame(maxHeight: 110)
     }
 }
 
 struct ClassRow_Previews: PreviewProvider {
     static var previews: some View {
         ClassRow(cls: ClassData(
-            name: "力学11",
+            name: "力学11力学11力学11力学11力学11力学力学11力学11力学11力学11力学11力学11力学11力学11力学11力学11",
             description: "Week 1 Description",
             room: "W222",
             start: Date(),

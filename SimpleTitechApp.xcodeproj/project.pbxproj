@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DED5690326589A47003E718B /* SimpleTitechAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5690226589A47003E718B /* SimpleTitechAppApp.swift */; };
-		DED5690526589A47003E718B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5690426589A47003E718B /* ContentView.swift */; };
 		DED5690726589A48003E718B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED5690626589A48003E718B /* Assets.xcassets */; };
 		DED5690A26589A48003E718B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED5690926589A48003E718B /* Preview Assets.xcassets */; };
+		DED5691226589FF9003E718B /* ClassDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5691126589FF9003E718B /* ClassDetailsRow.swift */; };
+		DED569142658A016003E718B /* ClassDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569132658A016003E718B /* ClassDetailsList.swift */; };
+		DED569162658A022003E718B /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569152658A022003E718B /* ClassRow.swift */; };
+		DED569182658A033003E718B /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569172658A033003E718B /* ClassList.swift */; };
+		DED569212658C9AB003E718B /* ClassData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569202658C9AB003E718B /* ClassData.swift */; };
+		DED569242658DDCD003E718B /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED569232658DDCD003E718B /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DED568FF26589A47003E718B /* SimpleTitechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTitechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED5690226589A47003E718B /* SimpleTitechAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTitechAppApp.swift; sourceTree = "<group>"; };
-		DED5690426589A47003E718B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DED5690626589A48003E718B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED5690926589A48003E718B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DED5690B26589A48003E718B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED5691126589FF9003E718B /* ClassDetailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsRow.swift; sourceTree = "<group>"; };
+		DED569132658A016003E718B /* ClassDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsList.swift; sourceTree = "<group>"; };
+		DED569152658A022003E718B /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
+		DED569172658A033003E718B /* ClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
+		DED569202658C9AB003E718B /* ClassData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassData.swift; sourceTree = "<group>"; };
+		DED569232658DDCD003E718B /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,10 @@
 		DED5690126589A47003E718B /* SimpleTitechApp */ = {
 			isa = PBXGroup;
 			children = (
+				DED569222658DDAB003E718B /* Lib */,
+				DED5691E2658C993003E718B /* Model */,
 				DED5690226589A47003E718B /* SimpleTitechAppApp.swift */,
-				DED5690426589A47003E718B /* ContentView.swift */,
+				DED5691D2658C982003E718B /* Views */,
 				DED5690626589A48003E718B /* Assets.xcassets */,
 				DED5690B26589A48003E718B /* Info.plist */,
 				DED5690826589A48003E718B /* Preview Content */,
@@ -67,6 +79,33 @@
 				DED5690926589A48003E718B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DED5691D2658C982003E718B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED5691126589FF9003E718B /* ClassDetailsRow.swift */,
+				DED569132658A016003E718B /* ClassDetailsList.swift */,
+				DED569152658A022003E718B /* ClassRow.swift */,
+				DED569172658A033003E718B /* ClassList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED5691E2658C993003E718B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DED569202658C9AB003E718B /* ClassData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DED569222658DDAB003E718B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DED569232658DDCD003E718B /* DateFormatter.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED5690526589A47003E718B /* ContentView.swift in Sources */,
+				DED569242658DDCD003E718B /* DateFormatter.swift in Sources */,
+				DED569142658A016003E718B /* ClassDetailsList.swift in Sources */,
+				DED569182658A033003E718B /* ClassList.swift in Sources */,
+				DED569212658C9AB003E718B /* ClassData.swift in Sources */,
 				DED5690326589A47003E718B /* SimpleTitechAppApp.swift in Sources */,
+				DED569162658A022003E718B /* ClassRow.swift in Sources */,
+				DED5691226589FF9003E718B /* ClassDetailsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

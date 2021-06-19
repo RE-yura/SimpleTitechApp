@@ -30,7 +30,6 @@ struct ClassDetailsRow: View {
             }
             .padding(.vertical, 12.0)
         }
-        .frame(maxHeight: 200)
     }
 }
 

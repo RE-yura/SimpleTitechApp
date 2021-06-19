@@ -28,6 +28,7 @@ struct ClassRow: View {
                 VStack(alignment: .leading) {
                     Text(self.cls.name)
                         .padding(.bottom, 10.0)
+                        .lineLimit(2)
                     Text(self.cls.description)
                         .foregroundColor(.secondary)
                 }
@@ -43,7 +44,6 @@ struct ClassRow: View {
             }
             .padding(.vertical, 12.0)
         }
-        .frame(maxHeight: 110)
     }
 }
 
